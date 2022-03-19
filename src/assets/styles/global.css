@@ -1,49 +1,89 @@
-.header {
-    padding: 2%;
-    background-color: rgb(128, 0, 107);
-    font-size: 50px;
-    text-align: center;
-    width: 100%;
+/*.header {*/
+/*    padding: 1%;*/
+/*    !*background-color: rgb(128, 0, 107);*!*/
+/*    font-size: 20px;*/
+/*    text-align: center;*/
+/*    width: 100%;*/
+/*    color: white;*/
+/*    border-bottom: solid 1px purple;*/
+/*}*/
+
+/*.body {*/
+/*    flex: 4;*/
+/*    padding: 2%;*/
+/*    background-color: rgb(84, 78, 222);*/
+/*    font-size: 50px;*/
+/*    text-align: center;*/
+/*    width: 100%;*/
+/*    color: white;*/
+/*    height: 500px;*/
+/*}*/
+
+/*.menu {*/
+/*    flex: 1;*/
+/*    padding: 2%;*/
+/*    background-color: rgb(51 176 77);*/
+/*    font-size: 50px;*/
+/*    text-align: center;*/
+/*    width: 100%;*/
+/*    color: white;*/
+/*    height: 600px;*/
+/*}*/
+
+/* .footer {*/
+/*     z-index: 1050;*/
+/*   padding: 24px 0 24px 250px;*/
+/*   background-color: #e57924;*/
+/*   font-size: 50px;*/
+/*   text-align: center;*/
+/*   color: white;*/
+/*   width: 100%*/
+/* }*/
+
+.main .left-menu{
+    padding: 1%;
+    float: left;
+    width: 10%;
+    height: 760px;
+    /*background-color: rgb(51 176 77);*/
     color: white;
- }
-
-.Body {
-    padding: 2%;
-    background-color: rgb(84, 78, 222);
-    font-size: 50px;
+    font-size: 20px;
     text-align: center;
-    width: 100%;
+    border-right: solid 1px purple;
+}
+.main .content{
+    float: left;
+    width: 90%;
+    height: 700px;
+    overflow-y:auto; overflow-x:hidden;
+}
+.main .content .view{
+    height: 650px;
+    /*background-color: rgb(84, 78, 222);*/
     color: white;
-}
-
- .footer {
-   padding: 2%;
-    background-color: red;
-    font-size: 50px;
+    font-size: 20px;
     text-align: center;
-    width: 100%
- }
- 
- .dashboard {
-   padding: 3% 1%;
- }
-
-h1 {
-  text-align: center;
+    border-bottom: solid 1px purple;
+}
+.main .content .footer{
+    height: 50px;
+    /*background-color: #e57924;*/
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
 
-.display-board {
-  width: 100%;
-  background-color: rgba(0, 119, 128, 0.719);
-  padding: 5%;
+.main .content .header{
+    height: 50px;
+    /*background-color: #e57924;*/
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: solid 1px purple;
 }
 
-.number {
-  color: red;
-  font-size: 75px;
-  text-align: center;
+#app {
+    background-color: #1e1e2e;
+    height: 760px;
 }
 
-.mrgnbtm {
-  margin-top: 20px;
-}

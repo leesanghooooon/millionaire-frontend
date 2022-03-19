@@ -1,7 +1,16 @@
 <template>
   <div id="app">
-    <Header />
-    <router-view></router-view>
+<!--    <Header />-->
+    <div class="main">
+      <div class="left-menu">
+        <Menu />
+      </div>
+      <div class="content">
+        <div class="header"><Header /></div>
+        <div class="view"><router-view></router-view></div>
+        <div class="footer"><Footer /></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -10,11 +19,15 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import Header from './components/Header.vue'
+import Menu from './components/Menu.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Menu,
+    Footer
   }
 }
 </script>
