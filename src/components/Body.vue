@@ -1,6 +1,8 @@
 <template>
     <div>
-      Body
+      <div class="top-title">
+        <h1>Body</h1>
+      </div>
     </div>
 </template>
 

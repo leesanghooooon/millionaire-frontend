@@ -6,6 +6,6 @@
 
 <script>
     export default {
-        name: 'footer'
+        name: 'content_footer'
     }
 </script>
