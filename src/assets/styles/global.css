@@ -43,29 +43,35 @@
 .main .left-menu{
     padding: 1%;
     float: left;
+    /*position: fixed;*/
     width: 15%;
-    height: 760px;
+    height: 700px;
     /*background-color: rgb(51 176 77);*/
     color: white;
     font-size: 20px;
     text-align: center;
     border-right: solid 1px purple;
 }
-.main .content{
+.main .right-content{
     float: left;
     width: 85%;
     height: 700px;
-    overflow-y:auto; overflow-x:hidden;
+    overflow-y:auto;
+    overflow-x:hidden;
 }
-.main .content .view{
-    height: 650px;
+
+.right-content::-webkit-scrollbar {
+    display: none;
+}
+
+.main .right-content .view{
+    height: 900px;
     /*background-color: rgb(84, 78, 222);*/
     color: white;
     font-size: 20px;
-    text-align: center;
     border-bottom: solid 1px purple;
 }
-.main .content .footer{
+.main .right-content .footer{
     height: 50px;
     /*background-color: #e57924;*/
     color: white;
@@ -73,7 +79,7 @@
     text-align: center;
 }
 
-.main .content .header{
+.main .right-content .header{
     height: 50px;
     /*background-color: #e57924;*/
     color: white;
@@ -99,6 +105,8 @@
     transition: 0.5s;
     padding-top: 60px;
 }
+.sidebar::-webkit-scrollbar{ display:none; }
+
 
 .sidebar ul .inactive{
     list-style:none;
@@ -123,7 +131,62 @@
 
 /* Page Content */
 .top-title {
-    padding: 20px 8px 8px 32px;
-    text-align: left;
+    padding: 20px 8px 8px 10px;
     font-size: 30px;
+}
+
+.band {
+    border-bottom: solid 1px purple;
+    padding: 0px 8px 5px;
+}
+
+.row {
+    margin-right: unset;
+    margin-left: unset;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.card .card-header {
+    padding: 15px 15px 0;
+    border: 0;
+    color: hsla(0,0%,100%,.8);
+}
+
+.card-color-navy {
+    background: #27293d;
+}
+
+.card label {
+    font-size: .75rem;
+    margin-bottom: 5px;
+}
+
+.card label {
+    color: hsla(0,0%,100%,.6);
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    border-color: #2b3553;
+    border-radius: 0.4285rem;
+    font-size: .75rem;
+    -webkit-transition: color .3s ease-in-out,border-color .3s ease-in-out,background-color .3s ease-in-out;
+    transition: color .3s ease-in-out,border-color .3s ease-in-out,background-color .3s ease-in-out;
+    background-color: transparent;
+    color: hsla(0,0%,100%,.8);
+}
+
+.form-control:focus {
+    border-color: #e14eca;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: hsla(0,0%,100%,.8);
 }

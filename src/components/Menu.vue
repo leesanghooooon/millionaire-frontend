@@ -17,43 +17,43 @@
 <script>
 import request from '@/utils/request'
 
-    export default {
-      name: 'Menu',
-      data() {
-        return {
-          menuList: [
-            {title:'Dashboard', link:'/', icon:'', class:'active'},
-            {title:'MyChart', link:'/myChart', icon:'', class:'inactive'},
-            {title:'Product', link:'/product', icon:'', class:'inactive'},
-            {title:'Profile', link:'/profile', icon:'', class:'inactive'},
-            {title:'Contact', link:'/contact', icon:'', class:'inactive'}
-          ]
-        }
-      },
-      methods: {
-        getMenuList() {
-          this.searchData = {
-            finCoNo:'0010001'
-          }
-
-          request({
-            url: '/api/prod/selectProductList',
-            method: 'post',
-            data : this.searchData
-          }).then(res => {
-            console.log(res);
-          }).catch(err => {
-            console.log(err);
-          })
-        },
-        fnMenuMove(data){
-          let row = this.menuList.find(v => v.class === 'active');
-          row.class = 'inactive';
-          data.class = 'active';
-        }
-      },
-      mounted () {
-        this.getMenuList();
+  export default {
+    name: 'Menu',
+    data() {
+      return {
+        menuList: [
+          {title:'Dashboard', link:'/', icon:'', class:'active'},
+          {title:'MyChart', link:'/myChart', icon:'', class:'inactive'},
+          {title:'Product', link:'/product', icon:'', class:'inactive'},
+          {title:'Profile', link:'/profile', icon:'', class:'inactive'},
+          {title:'Contact', link:'/contact', icon:'', class:'inactive'}
+        ]
       }
+    },
+    methods: {
+      getMenuList() {
+        this.searchData = {
+          finCoNo:'0010001'
+        }
+
+        request({
+          url: '/api/prod/selectProductList',
+          method: 'post',
+          data : this.searchData
+        }).then(res => {
+          console.log(res);
+        }).catch(err => {
+          console.log(err);
+        })
+      },
+      fnMenuMove(data){
+        let row = this.menuList.find(v => v.class === 'active');
+        row.class = 'inactive';
+        data.class = 'active';
+      }
+    },
+    mounted () {
+      this.getMenuList();
     }
+  }
 </script>

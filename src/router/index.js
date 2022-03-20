@@ -13,6 +13,7 @@ export default new VueRouter({
     { path: '/Header', component: Header },
     { path: '/Body', component: Body },
     { path: '/Product', component: () => import('@/views/Product'), },
+    { path: '/Product/usrProdAdd', component: () => import('@/views/usrProdAdd'), },
     { path: '*', component: error404 }
   ]
 })

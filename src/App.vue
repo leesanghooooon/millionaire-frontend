@@ -1,11 +1,10 @@
 <template>
   <div id="app">
-<!--    <Header />-->
     <div class="main">
       <div class="left-menu">
         <Menu />
       </div>
-      <div class="content">
+      <div class="right-content main-panel">
         <div class="header"><Header /></div>
         <div class="view"><router-view></router-view></div>
         <div class="footer"><Footer /></div>
